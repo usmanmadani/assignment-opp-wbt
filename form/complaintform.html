@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lincoln University College</title>
+</head>
+<body>
+    <body bgcolor="#FF0000">
+    </body>
+    
+        
+      
+    <header>
+        <div style="text-align: center;">
+            <img src="logo.png" alt="Logo">
+          </div>
+      </header>
+      
+    <style>
+        :root {
+          --primary-color: #000000;
+          --secondary-color: #f3bfbf;
+          --font-size: 16px;
+        }
+      
+        form {
+          width: 600px;
+          max-width: 90%;
+          margin: 20px auto;
+          background-color: var(--secondary-color);
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          font-family: Arial, sans-serif;
+          font-size: var(--font-size);
+        }
+      
+        fieldset {
+          border: none;
+          margin-bottom: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        legend {
+          font-weight: bold;
+          font-size: calc(var(--font-size) * 1.5);
+          color: var(--primary-color);
+          margin-bottom: 10px;
+        }
+      
+        label {
+          display: block;
+          width: calc(100% - var(--font-size));
+          margin-bottom: 5px;
+        }
+      
+        input, textarea {
+          width: 100%;
+          box-sizing: border-box;
+          padding: calc(var(--font-size) / 2);
+          border: none;
+          outline: none;
+          background-color: white;
+          border-radius: calc(var(--font-size) / 4);
+        }
+      
+        input[type="submit"] {
+          width: auto;
+          background-color: var(--primary-color);
+          color: white;
+          padding: calc(var(--font-size) / 2) calc(var(--font-size));
+          margin-top: calc(var(--font-size) / 2);
+          cursor: pointer;
+          transition: transform 0.3s ease-in-out;
+        }
+      
+        input[type="submit"]:hover {
+          transform: scale(1.1);
+        }
+      
+        input[type="text"]:focus,
+        input[type="date"]:focus,
+        textarea:focus {
+          box-shadow: inset 0 0 calc(var(--font-size) / 4) var(--primary-color);
+        }
+      
+      </style>
+      <form action="action_page.php" method="post">
+        <fieldset>
+          <legend>Lincoln University Reporting form </legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+           <label for="department">Course/Semester:</label>
+           <input type="text" id="Course/Semester" name="department" required>
+          <label for="department">Gender:</label>
+          <input type="text" id="gender" name="department" required>
+        </fieldset>
+        <fieldset>
+          <legend>Name of Complainant</legend>
+          <input type="text" id="complainant" name="complainant" required>
+        </fieldset>
+        <fieldset>
+          <legend>Statement of Complaint</legend>
+          <label for="date">Date of Incident:</label>
+          <input type="date" id="date" name="date" required>
+          <label for="details">Details of Incident:</label>
+          <textarea id="details" name="details" rows="5" required></textarea>
+        </fieldset>
+        <input type="submit" value="Send Complaint">
+      </form>
+      
+      
+    </body>
+    </html>
+    
+      
+</body>
+</html>
