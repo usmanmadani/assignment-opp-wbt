@@ -1,0 +1,59 @@
+
+				.mainpic{
+					width:50%;
+					float:left;
+					height:700px;
+				}
+			.main{
+					width:50%;
+					float:left;
+					height:700px;
+					padding-top:100px;
+					text-align: center;
+					font-size: 20pt;
+				
+				}
+
+				.story{
+					font-size: 20pt;
+					clear:left;
+					background-color: #e9f2fa;
+					text-align: center;
+					text-align: justify;
+					
+				}
+
+				.names{
+					padding-bottom:30px;
+					 width:30%;
+					 float:left;
+					 margin:20px;
+				}
+
+				.Family{
+					padding-bottom:30px;
+					 width:30%;
+					 float:left;
+					 margin:20px;
+				}
+
+				.name{
+					padding-bottom:30px;
+					 width:30%;
+					 float:left;
+					 margin-left:20px;
+				}
+
+				.images{
+					width:40%;
+					margin:40px;
+					float: left;
+				}
+
+				.pics{
+					width:40%;
+					margin:40px;
+					float: left;
+				}
+			
+	
