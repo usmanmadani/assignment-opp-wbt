@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Array Methods</title>
+</head>
+<body>
+    <script>
+//find
+const arr = [1,2,3,4,5,6,7,8,9,10];
+const found = arr.find(Element =>Element > 5);
+console.log(found);
+//fill
+const array = new Array(5);
+console.log(arr);
+console.log(array.fill(10));
+//filter
+const filtered = arr.filter(Element => Element === 2 || Element === 4);
+console.log(filtered);
+//every
+const greaterfive = arr.every(num => num >5);
+console.log(greaterfive);
+
+const less = arr.every(num => num < 9);
+console.log(less);
+//reduce
+const reduced = arr.reduce((total,current) => total + current)
+;
+console.log(reduced);
+//findindex
+const names = ["adbul","munir","kamal","worldlight"];
+const index = names.findIndex(Element => Element === "munir");
+console.log(index);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
