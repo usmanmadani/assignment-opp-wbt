@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #fffbfb;
+    --secondary-color: #fffefe;
+    --font-size: 16px;
+  }
+  
+  form {
+    width: 3000px;
+    height: 745px;
+    max-width: 95%;
+    margin: 20px auto;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size);
+  }
+
+  div{
+    border: 10px;
+    height: 58px;
+    border-radius: 10px;
+    background-color:#fffefe;
+    border:1px solid black;
+    border-radius: 3px;
+    background-color: snow;
+    color: rgb(16, 224, 16);
+
+  }
+  
+ 
