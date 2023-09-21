@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular expression</title>
+
+    <h1>Regular expression to validate form</h1>
+</head>
+<body>
+    <label for="">Enter Email</label>
+<input type="email" id="email" placeholder="Email"> <br> <br>
+<label for="">Enter Password</label>
+<input type="password" id="password" placeholder="Password"> <br> <br>
+<label for="">Enter Telephone Number</label>
+<input type="tel" id="telephone" placeholder="Telephone">
+
+<button type="submit" onclick="validateForm()">Submit</button>
+
+<script>
+
+function validateForm() {
+
+  var password = document.getElementById('password').value;
+  var telephone = document.getElementById('telephone').value;
+  var email = document.getElementById('email').value;
+
+
+  var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,}$/;
+  var telephoneRegex = /^\+?[0-9]{1,19}$/;
+  var emailRegex = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
+
+  
+  if (!passwordRegex.test(password)) {
+    alert('The password must contain at least one lowercase letter, at least one uppercase letter, at least one digit, and be at least 6 characters long.');
+    return false;
+  }
+
+  if (!telephoneRegex.test(telephone)) {
+    alert('The telephone number must start with an optional `+` sign, followed by 1 to 19 digits.');
+    return false;
+  }
+
+  if (!emailRegex.test(email)) {
+    alert('The email address must contain at least one character before the `@` sign, and at least two characters after the `@` sign. The domain name must also contain at least two characters.');
+    return false;
+  }
+
+  
+  return true;
+}
+</script>
+</body>
+</html>
