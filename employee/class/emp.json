@@ -1,0 +1,45 @@
+[
+    {
+        "id": 5,
+        "firstName": "Mansoor ",
+        "lastName": " Opeyemi   Adeleke ",
+        "email": "opeyemiademon@gmail.com",
+        "department": "networking technology and cyber security ",
+        "address": "Nasarawa state, keffi",
+        "degree": "MSc. in Software Engineering",
+        "birthday": "2023-09-09",
+        "gender": "Male",
+        "file": "manssor.jpg",
+        "contact": "0908765432",
+        "salary": "20000"
+    },
+    {
+        "id": 1,
+        "firstName": "Abdullahi ",
+        "lastName": "Jafar Musa",
+        "email": "mrjafprogrammer@gmail.com",
+        "department": "computer science",
+        "address": "Nasarawa state, keffi",
+        "degree": "MSc. in Computer Science",
+        "birthday": "2023-09-24",
+        "gender": "Male",
+        "file": "jafar.jpg",
+        "contact": "090456434556",
+        "salary": "20000"
+    },
+    {
+        "id": 2,
+        "firstName": "Usman",
+        "lastName": "Madani",
+        "email": "usman@gmail.com",
+        "department": "computer science ",
+        "address": "Abuja",
+        "degree": "Network Technology and cyber security ",
+        "birthday": "2023-09-26",
+        "nin": "2345678",
+        "gender": "Male",
+        "file": "img.jpg",
+        "contact": "09071225126",
+        "salary": "20000000000"
+    }
+]

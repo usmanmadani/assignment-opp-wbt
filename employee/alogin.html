@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="assets/employee.jpg">
+	<title>Log In</title>
+
+	<link rel="stylesheet" type="text/css" href="css/stylelogin.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<h1>EMPLOYEE MANAGEMENT SYSTEM</h1>
+			<ul id="navli">
+				<li><a class="homeblack" href="index.html">HOME</a></li>
+				<li><a class="homeblack" href="elogin.html">Employee Login</a></li>
+				<li><a class="homered" href="alogin.html">Admin Login</a></li>
+				
+			</ul>
+		</nav>
+	</header>
+	<div class="divider"></div>
+
+	<div class="loginbox">
+    <img src="assets/admin.png" class="avatar">
+        <h1>Login Here</h1>
+        <form action="aloginwel.php" method="POST">
+            <p style="margin:20px 0px;">
+            <input type="text" name="mailuid" id="email" placeholder="Enter Email Address" required>
+		</p>
+		<p style="margin:20px 0px;">
+            <input type="password" name="pwd"  class="input" id="password" placeholder="Enter Password" required>
+
+		</p>
+		<a target="_blank">
+<button class="button btn" type="submit"  value="Login" onclick="validateForm();">Login</button>
+</a>
+        </form>
+        
+    </div>
+
+	<script>
+
+		function validateForm() {
+		
+		  var password = document.getElementById('password').value;
+	
+		  var email = document.getElementById('email').value;
+		
+		
+		  var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,}$/;
+		
+		  var emailRegex = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
+		
+		  
+		  if (!passwordRegex.test(password)) {
+			alert('The password must contain at least one lowercase letter, at least one uppercase letter, at least one digit, and be at least 6 characters long.');
+			return false;
+		  }
+		
+		
+		  if (!emailRegex.test(email)) {
+			alert('The email address must contain at least one character before the `@` sign, and at least two characters after the `@` sign. The domain name must also contain at least two characters.');
+			return false;
+		  }
+		
+		  
+		  return true;
+		}
+		</script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<html>
+<head>
+<link rel="icon" href="assets/employee.jpg">
+  <title>My Profile</title>
+    <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>EMPLOYEE MANAGEMENT SYSTEM</h1>
+      <ul id="navli">
+        <li><a class="homeblack" href="eloginwel.php">HOME</a></li>
+        <li><a class="homered" href="myprofile.php">My Profile</a></li>
+        <li><a class="homeblack" href="empproject.php">My Projects</a></li>
+        <li><a class="homeblack" href="applyleave.php">Apply Leave</a></li>
+        <li><a class="homeblack" href="elogin.html">Log Out</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="divider"></div>
+  
+<main>
+  
+  <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">My Information</h2>
+                    <form method="POST" action="myprofileup.php" >
+
+                        <div class="input-group">
+                          <img src="process/images/manssor.jpg" height = 150px width = 150px>
+                        </div>
+
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                  <p>First Name</p>
+                                     <input class="input--style-1" type="text" name="firstName" value="Mansoor" readonly >
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                  <p>Last Name</p>
+                                    <input class="input--style-1" type="text" name="lastName" value="Opeyemi Adeleke" readonly>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="input-group">
+                          <p>Email</p>
+                            <input class="input--style-1" type="email"  name="email" value="opeyemiademon@gmail.com" readonly>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                  <p>Date of Birth</p>
+                                    <input class="input--style-1" type="text" name="birthday" value="01/01/2023" readonly>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                  <p>Gender</p>
+                                  <input class="input--style-1" type="text" name="gender" value="Male" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                          <p>Contact Number</p>
+                            <input class="input--style-1" type="number" name="contact" value="09071225126" readonly>
+                        </div>
+
+                        <div class="input-group">
+                          <p>NID</p>
+                            <input class="input--style-1" type="number" name="nid" value="0000345654" readonly>
+                        </div>
+
+                        
+                         <div class="input-group">
+                          <p>Address</p>
+                            <input class="input--style-1" type="text"  name="address" value="Nasarawa state, keffi" readonly>
+                        </div>
+
+                        <div class="input-group">
+                          <p>Department</p>
+                            <input class="input--style-1" type="text" name="dept" value="Computer Science" readonly>
+                        </div>
+
+                        <div class="input-group">
+                          <p>Degree</p>
+                            <input class="input--style-1" type="text" name="degree" value="MSc. in Software Engineering" readonly>
+                        </div>
+
+
+                        <div class="input-group">
+                          <p>Total Salary</p>
+                            <input class="input--style-1" type="text" name="degree" value="500000" readonly>
+                        </div>
+
+                        <input type="hidden" name="id" id="textField" value="" required="required"><br><br>
+                        <div class="p-t-20">
+                            <button class="btn btn--radius btn--green"  name="send" >Update Information</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+          </main>
+              </body>
+              </html>
